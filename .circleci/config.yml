@@ -1,0 +1,22 @@
+
+version: 1
+jobs:
+   build:
+     docker:
+       - image: circleci/node:latest
+     steps:
+       - checkout
+       - run: npm install
+       - run: npx gulp build
+       - run: node .circleci/deploy.js
+       - run: echo "WE'RE ONLINE"
+
+workflows:
+  version: 1
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
