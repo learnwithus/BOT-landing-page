@@ -6,8 +6,8 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: npm install
-       - run: npx gulp build
+      #  - run: npm install
+      #  - run: npx gulp build
        - run: node .circleci/deploy.js
        - run: echo "WE'RE ONLINE"
 
