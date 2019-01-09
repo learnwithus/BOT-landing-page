@@ -7,7 +7,7 @@ var config = {
     host: process.env.FTPHOST,
     port: 21,
     localRoot: __dirname + "/../dist/",
-    remoteRoot: "~/public_html/wp-content/themes/vch/",
+    remoteRoot: "/home/vchbot/public_html/wp-content/themes/vch/",
     include: ['*']
 }
     
