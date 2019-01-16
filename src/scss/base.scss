@@ -2,9 +2,16 @@
 // VCH BOT Landing Page
 // ==========================================================================
 
+//Import Normalize.css
+@import "node-normalize-scss/_normalize";
+
+//Import Flexboxgrid
+@import 'flexboxgrid-sass/flexboxgrid';
+
 @import 'variables';
 @import 'layout';
 
 body {
     font-family: $fontFamily;
+    background-color: $backgroundColour;
 }
