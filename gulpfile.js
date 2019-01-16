@@ -24,16 +24,19 @@ const paths = {
     php: {
         src: rootPaths.src + '*.php',
         dist: rootPaths.dist,
+        devFilename: 'landing-dev.php'
     }
 }
 
 const css = () => {
     return gulp
         .src(paths.styles.src)
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: ['./node_modules']
+        }))
         .on("error", sass.logError)
         .pipe(sourcemaps.init())
-        .pipe(cleanCSS({debug: true}))
+        .pipe(cleanCSS({ debug: true }))
         .pipe(concat(paths.styles.filename + '.min.css'))
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest(paths.styles.dist))
@@ -49,15 +52,19 @@ const php = () => {
         .pipe(gulp.dest(paths.php.dist))
 }
 
-css.watch = () => {
+const phpDev = () => {
+    return gulp
+        .src(paths.php.src)
+        .pipe(rename(paths.php.devFilename))
+        .pipe(gulp.dest(paths.php.dist))
+}
+
+const watch = () => {
     gulp.watch(paths.styles.src, css);
+    gulp.watch(paths.php.src, phpDev);
 }
 
-js.watch = () => {
-    // WATCH SCRIPT 
-}
-
-const dev = gulp.parallel(css, js, php)
+const dev = gulp.parallel(css, js, phpDev, watch)
 const deploy = gulp.parallel(css, js, php)
 
 exports.default = dev;
