@@ -7,7 +7,7 @@ jobs:
      steps:
        - checkout
        - run: npm install
-       - run: npm gulp build
+       - run: npm gulp deploy
        - run: npm install -D ftp-deploy
        - run: node .circleci/deploy.js
        - run: echo "WE'RE ONLINE"
