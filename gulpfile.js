@@ -19,7 +19,8 @@ const paths = {
         filename: 'landing'
     },
     js: {
-
+        src: rootPaths.src + 'js/**/*.js',
+        dist: rootPaths.dist + 'js',
     },
     php: {
         src: rootPaths.src + '*.php',
@@ -43,7 +44,9 @@ const css = () => {
 }
 
 const js = () => {
-    return Promise.resolve('the value is ignored')
+    return gulp
+        .src(paths.js.src)
+        .pipe(gulp.dest(paths.js.dist))
 }
 
 const php = () => {
@@ -62,6 +65,7 @@ const phpDev = () => {
 const watch = () => {
     gulp.watch(paths.styles.src, css);
     gulp.watch(paths.php.src, phpDev);
+    gulp.watch(paths.js.src, js);
 }
 
 const dev = gulp.parallel(css, js, phpDev, watch)

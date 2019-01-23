@@ -13,6 +13,11 @@
 @import 'ui';
 @import 'loginform';
 
+//Gravity Theme
+@import 'theme/hero';
+@import 'theme/plugins';
+@import 'theme/style';
+
 body {
     font-family: $fontFamily;
     background-color: $backgroundColour;
