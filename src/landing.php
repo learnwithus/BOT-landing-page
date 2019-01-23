@@ -20,22 +20,15 @@
     <!-- MAIN -->
     <main>
 
-
         <!-- LOADING -->
         <div id="page-loader">
-
             <!-- SPINNER CONTAINER -->
             <div class="spinner-container">
-
                 <div class="css-spinner"></div>
-
             </div>
             <!-- /SPINNER CONTAINER -->
-
         </div>
         <!-- /LOADING -->
-
-
 
         <!-- HERO -->
         <section id="hero" class="hero hero-1">
@@ -44,55 +37,53 @@
             <!-- FRONT CONTENT -->
             <div class="front-content page-enter-animated">
 
+                <div class="row">
+                    <div class="col-sm-6">
 
-                <!-- CONTAINER MID -->
-                <div class="quote-container">
+                            <!-- CYCLE SLIDER WRAPPER  -->
+                            <div class="cycle-wrapper">
+
+                                <!-- CYCLE SLIDER -->
+                                <div id="cycle">
+
+                                    <div class="slide">
+                                        <h1>INSPIRATIONAL<span> & </span><br>VERY GREAT<br>QUOTE.</h1>
+                                    </div>
+                                    <div class="slide">
+                                        <h1>INSPIRATIONAL<span> & </span><br>VERY GREAT<br>QUOTE.</h1>
+                                    </div>
+
+                                </div>
+                                <!-- /CYCLE SLIDER -->
 
 
-
-                    <!-- CYCLE SLIDER WRAPPER  -->
-                    <div class="cycle-wrapper">
-
-
-                        <!-- CYCLE SLIDER -->
-                        <div id="cycle">
-
-                            <div class="slide">
-                                <h1>INSPIRATIONAL<span> & </span><br>VERY GREAT<br>QUOTE.</h1>
                             </div>
-                            <div class="slide">
-                                <h1>INSPIRATIONAL<span> & </span><br>VERY GREAT<br>QUOTE.</h1>
-                            </div>
-
-                        </div>
-                        <!-- /CYCLE SLIDER -->
-
+                            <!-- /CYCLE SLIDER WRAPPER -->
 
                     </div>
-					<!-- /CYCLE SLIDER WRAPPER -->
-					
-					<?php
-                    if (!is_user_logged_in()) { // Display WordPress login form:
-                        $args = array(
-                            'redirect' => admin_url(),
-                            'form_id' => 'loginform',
-                            'label_username' => __('Username'),
-                            'label_password' => __('Password'),
-                            'label_remember' => __('Remember Me'),
-                            'label_log_in' => __('Log In'),
-                            'remember' => true,
-                        );
-                        wp_login_form($args);
-                    } else { // If logged in:
-                        wp_loginout(home_url()); // Display "Log Out" link.
-                        // echo " | ";
-                        // wp_register('', ''); // Display "Site Admin" link.
-                    }
-                ?>
-
-
+                    <div class="col-sm-6">
+                        <div class="login-container">
+                            <?php
+								if (!is_user_logged_in()) { // Display WordPress login form:
+									$args = array(
+										'redirect' => admin_url(),
+										'form_id' => 'loginform',
+										'label_username' => __('Username'),
+										'label_password' => __('Password'),
+										'label_remember' => __('Remember Me'),
+										'label_log_in' => __('Log In'),
+										'remember' => true,
+									);
+									wp_login_form($args);
+								} else { // If logged in:
+									wp_loginout(home_url()); // Display "Log Out" link.
+									// echo " | ";
+									// wp_register('', ''); // Display "Site Admin" link.
+								}
+								?>
+                        </div>
+                    </div>
                 </div>
-                <!-- /CONTAINER MID -->
 
 
             </div>
@@ -132,10 +123,10 @@
 
 
         </section>
-		<!-- /HERO -->
-		
-	</main>
-	
+        <!-- /HERO -->
+
+    </main>
+
     <script type="text/javascript" src="/wp-content/themes/vch/js/theme/plugins/plugins.js"></script>
     <script type="text/javascript" src="/wp-content/themes/vch/js/theme/config.js"></script>
     <script type="text/javascript" src="/wp-content/themes/vch/js/theme/scripts.js"></script>

@@ -374,18 +374,16 @@
 
 .hero-1 .front-content.page-enter-animated .cycle-wrapper
 {
-    -webkit-transform: translateY(100%) !important;
-            transform: translateY(100%) !important;
+    // transform: translateY(100%) !important;
 
     opacity: 0 !important;
 }
 
 .hero-1 .front-content.page-enter-animated.show .cycle-wrapper
 {
-    -webkit-transition: 1s .5s;
-            transition: 1s .5s;
-    -webkit-transform: translateY(0) !important;
-            transform: translateY(0) !important;
+    transition: 1s .5s;
+
+    // transform: translateY(0) !important;
 
     opacity: 1 !important;
 }
