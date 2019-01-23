@@ -57,10 +57,10 @@ jQuery(window).on('load', function() {
 
 			}, 600);
 
-			$(".social-icons li a").tooltip({
-				container: 'body',
-				delay: { "show": 150, "hide": 0 }
-			});
+			// $(".social-icons li a").tooltip({
+			// 	container: 'body',
+			// 	delay: { "show": 150, "hide": 0 }
+			// });
 
 		}, 200);
 		

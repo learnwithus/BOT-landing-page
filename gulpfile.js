@@ -26,6 +26,10 @@ const paths = {
         src: rootPaths.src + '*.php',
         dist: rootPaths.dist,
         devFilename: 'landing-dev.php'
+    },
+    images: {
+        src: rootPaths.src + 'images/*.**',
+        dist: rootPaths.dist + 'images',
     }
 }
 
@@ -49,6 +53,12 @@ const js = () => {
         .pipe(gulp.dest(paths.js.dist))
 }
 
+const images = () => {
+    return gulp
+        .src(paths.images.src)
+        .pipe(gulp.dest(paths.images.dist))
+}
+
 const php = () => {
     return gulp
         .src(paths.php.src)
@@ -63,13 +73,14 @@ const phpDev = () => {
 }
 
 const watch = () => {
+    gulp.watch(paths.images.src, images);
     gulp.watch(paths.styles.src, css);
     gulp.watch(paths.php.src, phpDev);
     gulp.watch(paths.js.src, js);
 }
 
-const dev = gulp.parallel(css, js, phpDev, watch)
-const deploy = gulp.parallel(css, js, php)
+const dev = gulp.parallel(css, js, phpDev, images, watch)
+const deploy = gulp.parallel(css, js, php, images)
 
 exports.default = dev;
 exports.deploy = deploy;

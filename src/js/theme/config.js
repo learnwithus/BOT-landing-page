@@ -143,7 +143,8 @@
 				
 				
 				// IMAGE PATH / URL
-				var option_hero_background_image_path = [{src:'assets/images/1.jpg'}];
+				var option_hero_background_image_path = [{src:'/wp-content/themes/vch/images/1.jpg'}];
+				var hero_images = [{src:"/wp-content/themes/vch/images/1.jpg"},{src: "/wp-content/themes/vch/images/2.jpg"},{src: "/wp-content/themes/vch/images/3.jpg"}]
 		
 		
 		
@@ -153,7 +154,7 @@
 
 					
 				// IMAGES PATH / URL
-				var option_hero_background_slider_path = [{src:"assets/images/1.jpg"},{src: "assets/images/2.jpg"},{src: "assets/images/3.jpg"}];
+				var option_hero_background_slider_path = hero_images;
 				
 				
 				
@@ -210,7 +211,7 @@
 				
 				
 				// IMAGES PATH / URL
-				var option_hero_background_kenburns_path = [{src:"assets/images/1.jpg"},{src: "assets/images/2.jpg"},{src: "assets/images/3.jpg"}];
+				var option_hero_background_kenburns_path = hero_images;
 				
 				
 				
@@ -476,7 +477,7 @@
 
 
 				// GLITCH IMAGE
-				var option_hero_background_glitch_image = "assets/images/4.jpg";
+				var option_hero_background_glitch_image = "/wp-content/themes/vch/images/4.jpg";
 
 
 
