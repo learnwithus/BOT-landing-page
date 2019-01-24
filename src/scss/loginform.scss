@@ -7,10 +7,10 @@
 }
 
 .login-container{
-    margin: 0 auto;
+    margin: 0 10%;
     padding: 25px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     color: black;
     text-align: center;
     box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.75);
@@ -37,8 +37,9 @@
         border-radius: 5px;
 
         &[type=submit]{
-            color: black;
+            color: white;
             cursor: pointer;
+            background-color: $colourPink;
 
             &:hover {
 

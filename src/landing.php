@@ -66,6 +66,7 @@
                             <img src="/wp-content/themes/vch/images/logo.svg" alt="">
                         </div>
                         <div class="login-container">
+                            <h2>Sign In</h2>
                             <?php
 								if (!is_user_logged_in()) { // Display WordPress login form:
 									$args = array(
