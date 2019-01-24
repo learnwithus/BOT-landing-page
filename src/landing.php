@@ -62,11 +62,14 @@
 
                     </div>
                     <div class="col-sm-6">
+                        <div class="logo">
+                            <img src="/wp-content/themes/vch/images/logo.svg" alt="">
+                        </div>
                         <div class="login-container">
                             <?php
 								if (!is_user_logged_in()) { // Display WordPress login form:
 									$args = array(
-										'redirect' => admin_url(),
+										'redirect' => __('dashboard'),
 										'form_id' => 'loginform',
 										'label_username' => __('Username'),
 										'label_password' => __('Password'),
@@ -77,7 +80,9 @@
 									wp_login_form($args);
 								} else { // If logged in:
 									wp_loginout(home_url()); // Display "Log Out" link.
-									// echo " | ";
+                                    ?>
+                                    <a class="button" href="/dashboard">Enter</a>
+                                    <?php
 									// wp_register('', ''); // Display "Site Admin" link.
 								}
 								?>
