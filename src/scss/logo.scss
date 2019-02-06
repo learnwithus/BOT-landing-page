@@ -1,0 +1,259 @@
+$iterationCount: 10;
+
+.logo {
+    text-align: center;
+    padding-bottom: 2em;
+
+    svg {
+        width: 40%;
+
+        g#head {
+            animation: 1s linear backwards reverse a0_t_reverse;
+            // animation-direction: reverse;
+
+            > g {
+                animation: 1s linear backwards reverse head_t_reverse;
+                // animation-direction: reverse;
+
+                #antenna {
+                    animation: 1s linear backwards reverse antenna_t_reverse;
+                    // animation-direction: reverse;
+                }
+            }
+        }
+
+        path#T {
+            animation: 1s linear backwards reverse T_t_reverse;
+            // animation-direction: reverse;
+        }
+
+        &:hover {
+            g#head {
+                animation: 1s linear forwards normal a0_t;
+
+                > g {
+                    animation: 1s linear forwards normal head_t;
+
+                    #antenna {
+                        animation: 1s linear forwards normal antenna_t;
+                   
+                    }
+                }
+            }
+
+            path#T {
+                animation: 1s linear forwards normal T_t;
+           
+            }
+        }
+    }
+}
+
+@keyframes a0_t {
+    0% {
+        transform: translate(18.13px, 43px);
+        animation-timing-function: cubic-bezier(0.336889, 0, 0.944729, 0);
+    }
+
+    20% {
+        transform: translate(21.9675px, 43px);
+    }
+
+    30% {
+        transform: translate(21.9675px, 43px);
+        animation-timing-function: cubic-bezier(0.619929, 0, 0.423643, 1);
+    }
+
+    70% {
+        transform: translate(27.18px, 37.7875px);
+    }
+
+    100% {
+        transform: translate(27.18px, 37.7875px);
+    }
+}
+
+@keyframes head_t {
+    0% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+    }
+
+    20% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+    }
+
+    30% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+        animation-timing-function: cubic-bezier(0.86377, 0.30651, 0.201773, 0.808145);
+    }
+
+    70% {
+        transform: rotate(90deg) translate(-18.13px, -10px);
+    }
+
+    100% {
+        transform: rotate(90deg) translate(-18.13px, -10px);
+    }
+}
+
+@keyframes antenna_t {
+    0% {
+        transform: translate(-32.5975px, 5.965px) rotate(-90deg);
+    }
+
+    70% {
+        transform: translate(-32.5975px, 5.965px) rotate(-90deg);
+        animation-timing-function: cubic-bezier(1, 0.278995, 0.658103, 1);
+    }
+
+    100% {
+        transform: translate(0.402501px, 5.965px) rotate(-90deg);
+    }
+}
+
+@keyframes a1_t {
+    0% {
+        transform: translate(46.3102px, 43px);
+    }
+
+    70% {
+        transform: translate(46.3102px, 43px);
+        animation-timing-function: cubic-bezier(0.796274, 0.018649, 0.779798, 0.826614);
+    }
+
+    100% {
+        transform: translate(46.3102px, 63.069999px);
+    }
+}
+
+
+@keyframes T_t {
+    0% {
+        transform: translate(1.1052px, 0px);
+    }
+
+    70% {
+        transform: translate(1.1052px, 0px);
+        animation-timing-function: cubic-bezier(0.796274, 0.018649, 0.779798, 0.826614);
+    }
+
+    100% {
+        transform: translate(1.1052px, 20.069999px);
+    }
+}
+
+@keyframes T_d {
+    0% {
+        d: path(M38 0.07, 33L38 0.07, 35.85L43 0.78, 35.85L43 0.78, 53L46 0.63, 53L46 0.63, 35.88L52 0.34, 35.88L52 0.34, 33Z);
+    }
+
+    100% {
+        d: path(M38 0.07, 33L38 0.07, 35.85L43 0.78, 35.85L43 0.78, 53L46 0.63, 53L46 0.63, 35.88L52 0.34, 35.88L52 0.34, 33Z);
+    }
+}
+
+
+// Duplicated Animations
+
+@keyframes a0_t_reverse {
+    0% {
+        transform: translate(18.13px, 43px);
+        animation-timing-function: cubic-bezier(0.336889, 0, 0.944729, 0);
+    }
+
+    20% {
+        transform: translate(21.9675px, 43px);
+    }
+
+    30% {
+        transform: translate(21.9675px, 43px);
+        animation-timing-function: cubic-bezier(0.619929, 0, 0.423643, 1);
+    }
+
+    70% {
+        transform: translate(27.18px, 37.7875px);
+    }
+
+    100% {
+        transform: translate(27.18px, 37.7875px);
+    }
+}
+
+@keyframes head_t_reverse {
+    0% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+    }
+
+    20% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+    }
+
+    30% {
+        transform: rotate(0deg) translate(-18.13px, -10px);
+        animation-timing-function: cubic-bezier(0.86377, 0.30651, 0.201773, 0.808145);
+    }
+
+    70% {
+        transform: rotate(90deg) translate(-18.13px, -10px);
+    }
+
+    100% {
+        transform: rotate(90deg) translate(-18.13px, -10px);
+    }
+}
+
+@keyframes antenna_t_reverse {
+    0% {
+        transform: translate(-32.5975px, 5.965px) rotate(-90deg);
+    }
+
+    70% {
+        transform: translate(-32.5975px, 5.965px) rotate(-90deg);
+        animation-timing-function: cubic-bezier(1, 0.278995, 0.658103, 1);
+    }
+
+    100% {
+        transform: translate(0.402501px, 5.965px) rotate(-90deg);
+    }
+}
+
+@keyframes a1_t_reverse {
+    0% {
+        transform: translate(46.3102px, 43px);
+    }
+
+    70% {
+        transform: translate(46.3102px, 43px);
+        animation-timing-function: cubic-bezier(0.796274, 0.018649, 0.779798, 0.826614);
+    }
+
+    100% {
+        transform: translate(46.3102px, 63.069999px);
+    }
+}
+
+
+@keyframes T_t_reverse {
+    0% {
+        transform: translate(1.1052px, 0px);
+    }
+
+    70% {
+        transform: translate(1.1052px, 0px);
+        animation-timing-function: cubic-bezier(0.796274, 0.018649, 0.779798, 0.826614);
+    }
+
+    100% {
+        transform: translate(1.1052px, 20.069999px);
+    }
+}
+
+@keyframes T_d_reverse {
+    0% {
+        d: path(M38 0.07, 33L38 0.07, 35.85L43 0.78, 35.85L43 0.78, 53L46 0.63, 53L46 0.63, 35.88L52 0.34, 35.88L52 0.34, 33Z);
+    }
+
+    100% {
+        d: path(M38 0.07, 33L38 0.07, 35.85L43 0.78, 35.85L43 0.78, 53L46 0.63, 53L46 0.63, 35.88L52 0.34, 35.88L52 0.34, 33Z);
+    }
+}

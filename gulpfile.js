@@ -14,7 +14,8 @@ const rootPaths = {
 
 const paths = {
     styles: {
-        src: rootPaths.src + 'scss/**/*.scss',
+        watch: rootPaths.src + 'scss/**/*.scss',
+        src: rootPaths.src + 'scss/base.scss',
         dist: rootPaths.dist + 'css',
         filename: 'landing'
     },
@@ -74,7 +75,7 @@ const phpDev = () => {
 
 const watch = () => {
     gulp.watch(paths.images.src, images);
-    gulp.watch(paths.styles.src, css);
+    gulp.watch(paths.styles.watch, css);
     gulp.watch(paths.php.src, phpDev);
     gulp.watch(paths.js.src, js);
 }

@@ -143,8 +143,8 @@
 				
 				
 				// IMAGE PATH / URL
-				var option_hero_background_image_path = [{src:'/wp-content/themes/vch/images/1.jpg'}];
-				var hero_images = [{src:"/wp-content/themes/vch/images/1.jpg"},{src: "/wp-content/themes/vch/images/2.jpg"},{src: "/wp-content/themes/vch/images/3.jpg"}]
+				var option_hero_background_image_path = [{src:'/wp-content/themes/vch/images/Herophoto1.jpg'}];
+				var hero_images = [{src:"/wp-content/themes/vch/images/Herophoto1.jpg"},{src: "/wp-content/themes/vch/images/1.jpg"},{src: "/wp-content/themes/vch/images/3.jpg"}]
 		
 		
 		

@@ -28,6 +28,7 @@
     "node-normalize-scss": "^8.0.0"
   },
   "dependencies": {
-    "flexboxgrid-sass": "^8.0.5"
+    "flexboxgrid-sass": "^8.0.5",
+    "node-sass": "^4.11.0"
   }
 }
