@@ -47,10 +47,10 @@
                                 <div id="cycle">
 
                                     <div class="slide">
-                                        <h1>People who live the experience are your best resource for ideas to improve services</h1>
+                                        <h2>People who live the experience are your best resource for ideas to improve services</h2>
                                     </div>
                                     <div class="slide">
-                                        <h1>I think there is a really good team within Coastal Health. Once you, as a patient, as a family, are put in contact with these services, then your journey is almost quite nice.</h1>
+                                        <h2>I think there is a really good team within Coastal Health. Once you, as a patient, as a family, are put in contact with these services, then your journey is almost quite nice.</h2>
                                     </div>
 
                                 </div>
