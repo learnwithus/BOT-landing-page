@@ -2,10 +2,19 @@
     margin: 0 10%;
     padding: 25px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     color: black;
     text-align: center;
-    box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.1);
+
+    .login {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    p.login-username label, p.login-password label {
+        display: none;
+    }
 
     input.button {
         display: block;
@@ -32,6 +41,7 @@
         border: solid 1px lightgrey;
         padding: 1em;
         border-radius: 5px;
+        width: -webkit-fill-available; 
 
         &[type=submit]{
             color: white;
