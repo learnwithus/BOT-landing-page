@@ -2034,7 +2034,7 @@ $(document).ready(function(){
 	
 	// VARIBABLES
 	var cycleDuration = 800;
-	var cycleDelay = 6000;
+	var cycleDelay = 10000;
 	
 	
 	
