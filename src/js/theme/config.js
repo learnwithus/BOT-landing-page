@@ -216,7 +216,7 @@
 				
 				
 				// SLIDE DELAY / TIMEOUT IN MS
-				var option_hero_background_kenburns_delay = 6000;
+				var option_hero_background_kenburns_delay = 20000;
 				
 				
 				
