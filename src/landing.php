@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Landing-Dev */
+/* Template Name: Landing */
 
 ?>
 
