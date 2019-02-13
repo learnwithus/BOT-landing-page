@@ -35,9 +35,9 @@
 
 .hero .front-content {
     position: absolute;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 2em;
     z-index: 5;
     flex-grow: 1;
