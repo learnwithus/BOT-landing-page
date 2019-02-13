@@ -63,6 +63,7 @@
                     <div class="col-sm-6">
                         <div class="login-container">
                             <div class="login">
+                                <div class="logo"><img src="/wp-content/themes/vch/images/HorizontalLogo.svg" alt=""></div>
                             <h2>Sign In</h2>
                             <?php
                             if (!is_user_logged_in()) { // Display WordPress login form:
