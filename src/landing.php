@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Landing */
+/* Template Name: Landing-Dev */
 
 ?>
 
@@ -110,6 +110,10 @@
 
                 </div>
                 <!-- /LEVEL 1 -->
+
+                <div class="level-1point5">
+                    <div class="bg-image-overlay layer" data-depth="0.03"></div>
+                </div>
 
 
                 <!-- LEVEL 2 -->
