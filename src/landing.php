@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Landing */
+/* Template Name: $$$TEMPLATE_NAME$$$ */
 
 ?>
 
@@ -68,7 +68,7 @@
                             <?php
                             if (!is_user_logged_in()) { // Display WordPress login form:
                                 $args = array(
-                                    'redirect' => __(home_url()),
+                                    'redirect' => site_url( $_GET['r'] ),
                                     'form_id' => 'loginform',
                                     'label_username' => __('Username'),
                                     'label_password' => __('Password'),
@@ -136,11 +136,7 @@
 
     </main>
 
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/plugins/plugins.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/config.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/scripts.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/hero.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/landing.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/vch/js/bundle.min.js"></script>
 </body>
 
 </html>
