@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Landing-Dev */
+/* Template Name: Landing */
 
 ?>
 
@@ -68,7 +68,7 @@
                             <?php
                             if (!is_user_logged_in()) { // Display WordPress login form:
                                 $args = array(
-                                    'redirect' => __('dashboard'),
+                                    'redirect' => __(home_url()),
                                     'form_id' => 'loginform',
                                     'label_username' => __('Username'),
                                     'label_password' => __('Password'),
