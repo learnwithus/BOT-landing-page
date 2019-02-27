@@ -89,17 +89,19 @@ $(document).ready(function(){
 			
 		});
 
-		$(".bg-image-overlay").vegas({
+		// $(".bg-image-overlay").vegas({
 			
-			slides: option_hero_overlay,
-			transition: option_hero_background_kenburns_transition,
-			delay: option_hero_background_kenburns_delay,
-			transitionDuration: option_hero_background_kenburns_transitionDuration,
-			firstTransitionDuration: 1,
-			timer: false,
-			animation: "kenburns",
+		// 	slides: option_hero_overlay,
+		// 	transition: option_hero_background_kenburns_transition,
+		// 	delay: option_hero_background_kenburns_delay,
+		// 	transitionDuration: option_hero_background_kenburns_transitionDuration,
+		// 	firstTransitionDuration: 1,
+		// 	timer: false,
+		// 	// animationRegister: [ 'myAnimation1', 'myAnimation2' ]
 			
-		});
+		// });
+
+		
 	
 	}
 	
@@ -1785,6 +1787,9 @@ $(document).ready(function(){
 			}
 		
 		);
+
+
+		
 	
 	}
 

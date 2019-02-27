@@ -144,8 +144,8 @@
 				
 				// IMAGE PATH / URL
 				var option_hero_background_image_path = [{src:'/wp-content/themes/vch/images/1.jpg'}];
-				var hero_images = [{src: "/wp-content/themes/vch/images/1.jpg"},{src: "/wp-content/themes/vch/images/3.jpg"}]
-				var hero_overlay_images = [{src: "/wp-content/themes/vch/images/richardcutout.webp"}]
+				var hero_images = [{src: "/wp-content/themes/vch/images/Cassidy_BG.jpg"},{src: "/wp-content/themes/vch/images/3.jpg"}]
+				var hero_overlay_images = [{src: "/wp-content/themes/vch/images/Cassidy_Overlay.png"}]
 		
 		
 		
