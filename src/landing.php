@@ -112,16 +112,16 @@
                 <!-- /LEVEL 1 -->
 
                 <div class="level-1point5">
-                    <img class="bg-image-overlay layer" data-depth="0.3" src="/wp-content/themes/vch/images/Cassidy_Overlay.png">
+                    <img class="bg-image-overlay layer" data-depth="0.1" src="/wp-content/themes/vch/images/Cassidy_Overlay.png">
                 </div>
 
 
                 <!-- LEVEL 2 -->
                 <div class="level-2">
 
-                    <div class="bg-image layer" data-depth="0.04"></div>
-                    <div class="bg-video layer" data-depth="0.04"></div>
-                    <div class="bg-color layer" data-depth="0.04"></div>
+                    <div class="bg-image layer" data-depth="0.3"></div>
+                    <!-- <div class="bg-video layer" data-depth="0.04"></div>
+                    <div class="bg-color layer" data-depth="0.04"></div> -->
 
                 </div>
                 <!-- /LEVEL 2 -->
