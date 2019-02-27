@@ -1,4 +1,4 @@
 $(document).ready(function(){
-    $('input#user_login').attr('placeholder', 'Username');
-    $('input#user_pass').attr('placeholder', 'Password');
+    $('input#user_login').attr('placeholder', 'username');
+    $('input#user_pass').attr('placeholder', 'password');
 });

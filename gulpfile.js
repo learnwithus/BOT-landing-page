@@ -4,8 +4,9 @@ const autoprefixer = require('gulp-autoprefixer')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-var cleanCSS = require('gulp-clean-css')
-var sourcemaps = require('gulp-sourcemaps')
+const cleanCSS = require('gulp-clean-css')
+const sourcemaps = require('gulp-sourcemaps')
+const replace = require('gulp-replace');
 
 const rootPaths = {
     src: 'src/',
@@ -21,6 +22,13 @@ const paths = {
     },
     js: {
         src: rootPaths.src + 'js/**/*.js',
+        scripts: [
+            rootPaths.src + 'js/theme/plugins/plugins.js',
+            rootPaths.src + 'js/theme/config.js',
+            rootPaths.src + 'js/theme/scripts.js',
+            rootPaths.src + 'js/theme/hero.js',
+            rootPaths.src + 'js/landing.js'
+        ],
         dist: rootPaths.dist + 'js',
     },
     php: {
@@ -50,7 +58,11 @@ const css = () => {
 
 const js = () => {
     return gulp
-        .src(paths.js.src)
+        .src(paths.js.scripts)
+        .pipe(concat('bundle.js'))
+        .pipe(gulp.dest(paths.js.dist))
+        .pipe(uglify())
+        .pipe(rename('bundle.min.js'))
         .pipe(gulp.dest(paths.js.dist))
 }
 
@@ -63,12 +75,14 @@ const images = () => {
 const php = () => {
     return gulp
         .src(paths.php.src)
+        .pipe(replace('$$$TEMPLATE_NAME$$$', 'Landing'))
         .pipe(gulp.dest(paths.php.dist))
 }
 
 const phpDev = () => {
     return gulp
         .src(paths.php.src)
+        .pipe(replace('$$$TEMPLATE_NAME$$$', 'Landing-Dev'))
         .pipe(rename(paths.php.devFilename))
         .pipe(gulp.dest(paths.php.dist))
 }

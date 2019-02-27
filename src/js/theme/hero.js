@@ -88,6 +88,20 @@ $(document).ready(function(){
 			walk: function (index, slideSettings) {$("#cycle").cycle("next");}
 			
 		});
+
+		// $(".bg-image-overlay").vegas({
+			
+		// 	slides: option_hero_overlay,
+		// 	transition: option_hero_background_kenburns_transition,
+		// 	delay: option_hero_background_kenburns_delay,
+		// 	transitionDuration: option_hero_background_kenburns_transitionDuration,
+		// 	firstTransitionDuration: 1,
+		// 	timer: false,
+		// 	// animationRegister: [ 'myAnimation1', 'myAnimation2' ]
+			
+		// });
+
+		
 	
 	}
 	
@@ -1773,6 +1787,9 @@ $(document).ready(function(){
 			}
 		
 		);
+
+
+		
 	
 	}
 

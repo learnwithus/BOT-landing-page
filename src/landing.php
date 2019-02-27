@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Landing */
+/* Template Name: $$$TEMPLATE_NAME$$$ */
 
 ?>
 
@@ -38,10 +38,10 @@
             <div class="front-content page-enter-animated">
 
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" style="display:none">
 
                             <!-- CYCLE SLIDER WRAPPER  -->
-                            <div class="cycle-wrapper">
+                            <div class="cycle-wrapper" >
 
                                 <!-- CYCLE SLIDER -->
                                 <div id="cycle">
@@ -68,7 +68,7 @@
                             <?php
                             if (!is_user_logged_in()) { // Display WordPress login form:
                                 $args = array(
-                                    'redirect' => __('dashboard'),
+                                    'redirect' => site_url( $_GET['r'] ),
                                     'form_id' => 'loginform',
                                     'label_username' => __('Username'),
                                     'label_password' => __('Password'),
@@ -103,13 +103,17 @@
                 <div class="level-1">
 
 
-                    <div class="bg-overlay"></div>
-                    <div class="bg-pattern"></div>
+                    <!-- <div class="bg-overlay"></div> -->
+                    <!-- <div class="bg-pattern"></div> -->
                     <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
 
 
                 </div>
                 <!-- /LEVEL 1 -->
+
+                <div class="level-1point5">
+                    <img class="bg-image-overlay layer" data-depth="0.3" src="/wp-content/themes/vch/images/Cassidy_Overlay.png">
+                </div>
 
 
                 <!-- LEVEL 2 -->
@@ -132,11 +136,7 @@
 
     </main>
 
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/plugins/plugins.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/config.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/scripts.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/theme/hero.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/vch/js/landing.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/vch/js/bundle.min.js"></script>
 </body>
 
 </html>
