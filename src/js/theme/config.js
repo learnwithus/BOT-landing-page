@@ -197,7 +197,7 @@
 				// flash = FLASH TRANSITION
 				// flash2 = FLASH 2 TRANSITION
 				
-				var option_hero_background_slider_transition = "slideDown";
+				var option_hero_background_slider_transition = "fade";
 				
 				
 				
@@ -218,7 +218,7 @@
 				
 				
 				// SLIDE DELAY / TIMEOUT IN MS
-				var option_hero_background_kenburns_delay = 20000;
+				var option_hero_background_kenburns_delay = 10000;
 				
 				
 				
@@ -255,7 +255,7 @@
 				// flash = FLASH TRANSITION
 				// flash2 = FLASH 2 TRANSITION
 				
-				var option_hero_background_kenburns_transition = "slideDown";
+				var option_hero_background_kenburns_transition = "fade";
 				
 				
 				
