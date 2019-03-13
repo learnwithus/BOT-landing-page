@@ -5,9 +5,11 @@
     // left: -5% !important;
 }
 
-img.bg-image-overlay{
-    height: 105% !important;
-    width: auto !important;
-    top: -2.5% !important;
-    left: -2.5% !important;
+.bg-image-overlay{
+     top: -5% !important;
+    left: -5% !important;
+    height: 110vh !important;
+    width: 110vw !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

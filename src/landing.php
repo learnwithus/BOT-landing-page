@@ -111,8 +111,8 @@
                 </div>
                 <!-- /LEVEL 1 -->
 
-                <div class="level-1point5">
-                    <img class="bg-image-overlay layer" data-depth="0.1" src="/wp-content/themes/vch/images/Cassidy_Overlay.png">
+                <div class="level-1point5 bg-image-overlay layer" data-depth="0.1" style="background-image: url('/wp-content/themes/vch/images/Cassidy_Overlay.png')">
+                    <!-- <img class="bg-image-overlay layer" data-depth="0.1" src="/wp-content/themes/vch/images/Cassidy_Overlay.png"> -->
                 </div>
 
 

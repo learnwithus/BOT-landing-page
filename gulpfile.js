@@ -7,6 +7,8 @@ const uglify = require('gulp-uglify')
 const cleanCSS = require('gulp-clean-css')
 const sourcemaps = require('gulp-sourcemaps')
 const replace = require('gulp-replace');
+const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
 
 const rootPaths = {
     src: 'src/',
@@ -69,6 +71,17 @@ const js = () => {
 const images = () => {
     return gulp
         .src(paths.images.src)
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    // {removeViewBox: true},
+                    // {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(gulp.dest(paths.images.dist))
 }
 
