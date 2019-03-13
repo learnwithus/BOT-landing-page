@@ -68,7 +68,7 @@
                             <?php
                             if (!is_user_logged_in()) { // Display WordPress login form:
                                 $args = array(
-                                    // 'redirect' => site_url( $_GET['r'] ),
+                                    'redirect' => site_url( $_GET['r'] ),
                                     'form_id' => 'loginform',
                                     'label_username' => __('Username'),
                                     'label_password' => __('Password'),
